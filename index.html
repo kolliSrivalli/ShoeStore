@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shoe-Store</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <script src="../javascript/index.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="audio" onclick="pauseAudio()">
+        <i class="fa-solid fa-volume-xmark fa-bounce" id="audioIcon"></i>
+    </div>
+   <div id="loadingpage">
+      <div id="loadingGlow">
+      </div>
+      <div id="loading">
+           <h1 id="loadingheading">Loading...</h1>
+      </div>
+      <button id="entertowebpage" onclick="playAudio()">Enter</button>
+      <div id="loadingbar"></div>
+   </div>
+   <div id="main">
+   <header>
+    <video id="headervid" src="../asset/videos/shoevideo.mp4" autoplay loop muted></video>
+           
+    <div id="navbar">
+        <img id="webpagelogo" src="../asset/logo/logo.png">
+        <a href="#latestshoesec"><h4>Latest Shoes</h4></a>
+        <a href="#categorysec"><h4>Catagory</h4></a>
+        <h4>Cart</h4>
+        <h4 id="login" onclick="login()">Login</h4>
+    </div>
+    <h1 id="pagename">Morningstar Sneakers</h1>
+    <div id="search">
+        <input id="searchId" type="text" name="" id="">
+        <i class="fa-solid fa-magnifying-glass fa-beat8"></i>
+    </div>
+    <a href="#latestshoesec"><button class="godown">V</button></a>
+</header>
+<section id="latestshoesec">
+    <h1 id="latestshoesecheading">Latest Shoe Section</h1>
+    <div class="shoerot" id="lsshoe1">
+        <img class="LSshoe" src="../asset/images/nikeshoe1.png" alt="">
+        <h1 class="LSname">Nike Jordan 1231</h1>
+        <p class="LSpara">Lorem ipsum dolor sit amet.</p>
+        <h2 class="money">Rs:150/-</h2>
+    </div>
+    <div class="shoerot" id="lsshoe2">
+        <img class="LSshoe" src="../asset/images/nikeshoe2.png" alt="">
+        <h1 class="LSname">Nike Jordan 4301</h1>
+        <p class="LSpara">Lorem ipsum dolor sit amet.</p>
+        <h2 class="money">Rs:200/-</h2>
+    </div>
+    <div class="shoerot" id="lsshoe3">
+        <img class="LSshoe" src="../asset/images/nikeshoe3.png" alt="">
+        <h1 class="LSname">Nike Jordan 7489</h1>
+        <p class="LSpara">Lorem ipsum dolor sit amet.</p>
+        <h2 class="money">Rs:200/-</h2>
+    </div>
+    <a href="#categorysec"><button class="godown" id="buttonls">V</button></a>
+   </section>
+
+      <section id="categorysec">
+            <h1 id="categorysection">Category Section</h1>
+            <a href="./lifestyle.html">
+            <div class="catasec" id="lifestyle">Lifestyle</div></a>
+            <a href="./jordancategory.html">
+            <div class="catasec" id="Jordan">Jordan</div></a>
+            <a href="./RunningShoe.html">
+            <div class="catasec" id="running">Running</div></a>
+            <a href="./basketball.html">
+            <div class="catasec" id="basketball">Basketball</div></a>
+            <a href="./football.html">
+                <div class="catasec" id="football">Football</div></a>
+            <a href="./training.html">
+            <div class="catasec" id="traininggym">Training & gym</div></a>
+            <a href="./skateboard.html">
+            <div class="catasec" id="skatebording">Skateboarding</div></a>
+            <a href="./golf.html">
+            <div class="catasec" id="golf">Golf</div></a>
+            <a href="./tennis.html">
+            <div class="catasec" id="tennis">Tennis</div></a>
+            <a href="./walking.html">
+                <div class="catasec" id="walking">Walking</div></a> 
+                <a href="#">
+                    <button id="up" class="godown">V</button>
+                </a>    
+   </section>
+   <footer>
+    <span id="copyrt">&copy;2023 Morningstar Sneakers Inc.All Rights Reserved</span>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-snapchat"></i>
+   </footer>
+</div>
+</body>
+</html>
